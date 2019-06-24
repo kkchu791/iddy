@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div style={{textAlign: "center"}}>
+    <div style={content}>
       <Router>
         <Route exact={true} path="/" render={() => (
           <div>
@@ -25,6 +25,11 @@ const App = () => {
       </Router>
     </div>
   );
+}
+
+const content = {
+  textAlign: 'center',
+  margin: '40px'
 }
 
 export default App;

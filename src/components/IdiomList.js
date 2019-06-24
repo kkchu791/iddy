@@ -9,8 +9,8 @@ class IdiomList extends Component {
     return (
       <div>
         {idioms.map(idiom => (
-          <div key={idiom["id"]}>
-            <Link to={`/i/${idiom.id}`}>
+          <div key={idiom["id"]} style={idiomItem}>
+            <Link style={idiomLink} to={`/i/${idiom.id}`}>
               {idiom["content"]}
             </Link>
           </div>
@@ -18,6 +18,15 @@ class IdiomList extends Component {
       </div>
     );
   }
+}
+
+const idiomItem = {
+  margin: "20px 0"
+}
+
+const idiomLink= {
+  textDecoration: "none",
+  color: "black"
 }
 
 function mapStateToProps(state) {

@@ -10,10 +10,28 @@ const Idiom = ({ idiom }) => {
         </Link>
       </div>
       <div>
-        <p>{idiom["content"]}</p>
+        <p style={content}>
+          {idiom["content"]}
+        </p>
+        <p>
+          {idiom["meaning"]}
+        </p>
+        <p style={example}>
+          {idiom["example"]}
+        </p>
       </div>
     </div>
   );
 }
+
+const content = {
+  fontWeight: "bold",
+  textDecoration: "underline"
+}
+
+const example = {
+  fontStyle: "italic",
+}
+
 
 export default Idiom;

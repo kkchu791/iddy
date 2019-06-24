@@ -20,7 +20,6 @@ class SearchBar extends Component {
   onFormSubmit(event) {
     event.preventDefault();
     this.props.fetchIdioms(this.state.keyword);
-    this.setState({ keyword : "" });
   }
 
   render() {
@@ -32,10 +31,18 @@ class SearchBar extends Component {
           placeholder="Search..."
           value={keyword}
           onChange={this.onInputChange}
+          style={searchBar}
         />
       </form>
     );
   }
+}
+
+const searchBar = {
+  background: "transparent",
+  border: "none",
+  borderBottom: "1px solid #000000",
+  marginBottom: "20px"
 }
 
 function mapDispatchToProps(dispatch) {

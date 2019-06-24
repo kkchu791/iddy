@@ -1,5 +1,5 @@
 export const data = [
-  {"id": "1", "content": "Left holding the baby", "keyword": ["fear", "scared"]},
+  {"id": "1", "content": "Left holding the baby", "keyword": ["fear", "scared"], "meaning": "If someone is left holding the baby, they are made responsible for a problem that others don't want to deal with.", "example": "'When the angry customer started to complain, my colleague disappeared and left me holding the baby.'"},
   {"id": "2", "content": "Break out in cold sweat", "keyword": ["fear", "scared"]},
   {"id": "3", "content": "Heart in one's mouth", "keyword": ["fear", "scared"]},
   {"id": "4", "content": "Make my blood run cold", "keyword": ["fear", "scared"]},
